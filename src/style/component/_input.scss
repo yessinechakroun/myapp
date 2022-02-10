@@ -1,0 +1,38 @@
+input[type="password"]::-ms-reveal,
+input[type="password"]::-ms-clear {
+    display: none;
+}
+.defaul-larg-input {
+    height: 45px;
+}
+.defaul-meduim-input {
+    height: 35px;
+}
+.default-input {
+    padding: 5px 10px;
+    border-radius: 0.3125rem;
+    border: 0.0625rem solid $InputFilterBorder;
+    background: $BlackText;
+    @include Text-font-style($WhiteColor, $PrimaryFont, null, null, 1rem, 1.5);
+}
+input {
+    outline: none;
+}
+.invalid-input,
+.invalid-input:hover,
+.invalid-input:focus {
+    border-color: $Red;
+    box-shadow: 0 0 10px rgb(236 35 35 / 10%);
+}
+.valid-input,
+.valid-input:hover,
+.valid-input:focus {
+    border-color: $DarkGreen;
+    box-shadow: 0 0 10px rgb(2 177 31 / 10%);
+}
+.default-input:focus {
+    box-shadow: 0 0 10px rgb(55 125 255 / 10%);
+}
+.default-input::placeholder {
+    color: $Grey;
+}

@@ -1,0 +1,31 @@
+@mixin Text-font-style($color, $font-family, $font-style, $font-weight, $font-size, $line-height) {
+    color: $color;
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    line-height: $line-height;
+}
+@mixin border-radius($border) {
+    border-radius: $border;
+    -webkit-border-radius: $border;
+    -moz-border-radius: $border;
+    -ms-border-radius: $border;
+    -o-border-radius: $border;
+}
+
+@mixin truncate-text-horizontal($width) {
+    width: $width;
+    white-space: $white-space;
+    overflow: $overflow;
+    text-overflow: $text-overflow;
+}
+
+@mixin space-x($space) {
+    > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-x-reverse: 0;
+        margin-right: calc($space * var(--tw-space-x-reverse));
+        margin-left: calc($space * calc(1 - var(--tw-space-x-reverse)));
+        display: flex;
+    }
+}

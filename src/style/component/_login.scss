@@ -1,0 +1,7 @@
+.form-container {
+    @extend .shadow;
+    max-width: 350px;
+    width: 100%;
+    border: 1px solid $InputFilterBorder;
+    @include border-radius(8px);
+}

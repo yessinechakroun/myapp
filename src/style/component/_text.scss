@@ -1,0 +1,34 @@
+.text-h1 {
+    @include Text-font-style($WhiteColor, $PrimaryFont, normal, 600, 1.41094rem, 1.4);
+}
+
+.text-h2 {
+    @include Text-font-style($WhiteColor, $PrimaryFont, normal, 600, 1.3125rem, 1.4);
+}
+
+.text-h3 {
+    @include Text-font-style($WhiteColor, $PrimaryFont, normal, 600, 1.14844rem, 1.4);
+}
+
+.text-h4 {
+    @include Text-font-style($WhiteColor, $PrimaryFont, normal, 600, 0.98438rem, 1.4);
+}
+
+.text-h5 {
+    @include Text-font-style($WhiteColor, $PrimaryFont, normal, 600, 0.875rem, 1.4);
+}
+
+.text-h6 {
+    @include Text-font-style($WhiteColor, $PrimaryFont, normal, 600, 0.76563rem, 1.4);
+}
+
+/* --------  @Media 1200  -------- */
+
+@media (max-width: 1200px) {
+    .text-h1 {
+        font-size: calc(1.26609rem + 0.19312vw);
+    }
+    .text-h2 {
+        font-size: calc(1.25625rem + 0.075vw);
+    }
+}
